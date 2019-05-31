@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title></title>
+</head>
+<body>
+	
+	<div> 
+		<button id="Doge" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="onClick()">Doge</button>
+		<img src="doge.png" id="image" style="visibility:hidden">
+	</div>
+<script>
+
+	let Doge = document.getElementById('Doge');
+	let image = document.getElementById('image');
+
+
+	window.onload = 'Woof!';
+	Doge.innerHTML = 'Woof!';
+
+
+	function mouseOver() 
+	{ 
+		Doge.innerHTML = 'Woof woof';
+	}
+
+	function mouseOut()
+	{ 
+		Doge.innerHTML = 'Woof!'; 
+	}
+
+	function onClick ()
+	{ 
+		let image = document.getElementById('image');
+		if (image.style.visibility === 'hidden') { 
+			image.style.visibility = 'visible'; }
+		else { 
+			image.style.visibility = 'hidden'; 
+			}
+	}
+	
+</script>
+
+</body>
+</html>
